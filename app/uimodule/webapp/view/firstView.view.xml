@@ -1,0 +1,52 @@
+<mvc:View controllerName="btp.uimodule.controller.firstView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        
+        <!-- <Text text="hi" /> -->
+       	<Table id="idProductsTable"
+		inset="false"
+		items="{
+			path: '/Books'
+			
+		}">
+		
+		<columns>
+			<Column
+				width="12em">
+				<Text text="ID" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="title" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="stock" />
+			</Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					
+					<Text
+						text="{ID}" />
+					<Text
+						text="{title}" />
+                        <Text
+						text="{stock}" />
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+        </content>
+
+    </Page>
+</mvc:View>
