@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
         
-        <Text text="hellos" /> 
+        <!-- <Text text="hi" /> -->
        	<Table id="idProductsTable"
 		inset="false"
 		items="{
